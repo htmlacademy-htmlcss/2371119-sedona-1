@@ -11,12 +11,12 @@
     <header>
       <div class="container">
         <nav>
-          <a href="index.html">
+          <a>
             <img class="logo" src="images/Frame 19.png" alt="" width="140" height="70">
           </a>
           <ul class="navigation-menu">
             <li class="navigation-item">
-              <a class="active" href="index.html">Главная</a>
+              <a class="active">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#">О седоне</a>
@@ -25,17 +25,15 @@
               <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-menu-buttons">
-            <li class="navigation-menu-button">
-              <img class="search-button" src="images/search.svg" alt="поиск" width="20" height="20">
-            </li>
-            <li class="navigation-menu-button">
-              <img class="heart-button" src="images/heart.svg" alt="избранное" width="20" height="20">
-            </li>
-            <li class="navigation-menu-button">
-              <a class="main-button" href="#">ХОЧУ СЮДА!</a>
-            </li>
-          </ul>
+          <div class="navigation-menu-buttons">
+            <button class="search-button" type="button">
+              <img src="images/search.svg" alt="Поиск" width="20" height="20">
+            </button>
+            <button class="heart-button" type="button">
+              <img src="images/heart.svg" alt="Избранное" width="20" height="20">
+            </button>
+            <button class="popup-button" type="button">хочу сюда!</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -84,21 +82,21 @@
           <ul class="features-list">
             <li class="feature-item">
               <img class="feature-logo" src="images/Advantage-icon.svg" width="75" height="72">
-              <h3>ЖИЛЬЁ</h3>
-              <span class="feature-description">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</span>
+              <h3>жильё</h3>
+              <p class="feature-description">Рекомендуем пожить в настоящем мотеле,
+                всё как в кино!</p>
             </li>
             <li class="feature-item">
               <img class="feature-logo" src="images/Advantage-icon-2.svg" width="75" height="72">
-              <h3>ЕДА</h3>
-              <span class="feature-description">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</span>
+              <h3>еда</h3>
+              <p class="feature-description">Всегда заказывайте
+                топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="feature-item">
               <img class="feature-logo" src="images/Advantage-icon-3.svg" width="75" height="72">
-              <h3>СУВЕНИРЫ</h3>
-              <span class="feature-description">Не только китайского,
-                но и настоящего местного производства!</span>
+              <h3>сувениры</h3>
+              <p class="feature-description">Не только китайского,
+                но и настоящего местного производства!</p>
             </li>
           </ul>
         </div>
@@ -123,27 +121,23 @@
     </main>
     <footer>
       <div class="container">
-        <ul class="footer-menu">
+        <div class="footer-wrapper">
           <div class="social">
-            <li class="footer-menu-item">
-              <img src="images/vk.svg">
-            </li>
-            <li class="footer-menu-item">
-              <img src="images/telegram.svg">
-            </li>
-            <li class="footer-menu-item">
-              <img src="images/youtube.svg">
-            </li>
-          </div>
-          <li class="footer-menu-item">
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </li>
-          <li class="footer-menu-item">
             <a href="#">
-              <img src="images/academy-logo.svg" alt="">
+              <img src="images/vk.svg" alt="ВКонтакте" width="24" height="14">
             </a>
-          </li>
-        </ul>
+            <a href="#">
+              <img src="images/telegram.svg" alt="Telegram" width="24" height="14">
+            </a>
+            <a href="#">
+              <img src="images/youtube.svg" alt="Youtube" width="24" height="14">
+            </a>
+          </div>
+          <a href="tel:+78128121212">+7(812)812-12-12</a>
+          <a href="#">
+            <img src="images/academy-logo.svg" alt="" width="115" height="33">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
