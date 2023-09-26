@@ -1,0 +1,67 @@
+h1 {
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs span {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.search-form ul {
+    list-style-type: none;
+}
+
+.search-form-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.search-form label {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.price-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.filter-buttons button {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.catalog h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+select {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.cards-list {
+    list-style-type: none;
+}
+
+.card-name {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.card-type, .card-min-price {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333;
+}
+
+.card-more, .card-favorite, .rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: inherit;
+}

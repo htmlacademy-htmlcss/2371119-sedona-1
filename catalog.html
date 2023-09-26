@@ -5,38 +5,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/catalog.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <div class="container">
-                <nav>
-                    <a href="index.html">
-                        <img class="logo" src="images/logo.png" alt="" width="140" height="70" alt="">
-                    </a>
-                    <ul class="navigation-menu">
-                        <li class="navigation-item">
-                            <a class="active" href="index.html">Главная</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a href="#">О седоне</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a>Гостиницы</a>
-                        </li>
-                    </ul>
-                    <div class="navigation-menu-buttons">
-                        <button class="search-button" type="button">
-                            <img src="images/search.svg" alt="Поиск" width="20" height="20">
-                        </button>
-                        <button class="heart-button" type="button">
-                            <img src="images/heart.svg" alt="Избранное" width="20" height="20">
-                        </button>
-                        <button class="popup-button" type="button">хочу сюда!</button>
-                    </div>
-                </nav>
+              <nav>
+                <a href="index.html">
+                  <img class="logo" src="images/logo.png" alt="" width="140" height="70">
+                </a>
+                <ul class="navigation-menu">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="index.html">Главная</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">О седоне</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link active">Гостиницы</a>
+                  </li>
+                </ul>
+                <div class="navigation-menu-buttons">
+                  <button class="loupe-button" type="button">
+                    <img src="images/search.svg" alt="Поиск" width="20" height="20">
+                  </button>
+                  <button class="heart-button" type="button">
+                    <img src="images/heart.svg" alt="Избранное" width="20" height="20">
+                  </button>
+                  <button class="popup-button" type="button">хочу сюда!</button>
+                </div>
+              </nav>
             </div>
-        </header>
+          </header>
         <main>
             <section class="catalog-search">
                 <div class="container">
@@ -48,7 +50,7 @@
                     </div>
                     <form class="search-form" action="">
                         <ul class="infrastructure">
-                            <p class="infrastructure-title">Инфраструктура:</p>
+                            <p class="search-form-title">Инфраструктура:</p>
                             <li class="infrastructure-item">
                                 <input type="checkbox" name="pool" id="pool" checked>
                                 <label for="pool">Бассейн</label>
@@ -63,7 +65,7 @@
                             </li>
                         </ul>
                         <ul class="housing">
-                            <p class="housing-title">Тип Жилья:</p>
+                            <p class="search-form-title">Тип Жилья:</p>
                             <li class="housing-item">
                                 <input type="checkbox" name="hotel" id="hotel" checked>
                                 <label for="hotel">Гостиница</label>
@@ -85,7 +87,7 @@
                         </div>
                         <div class="filter-buttons">
                             <button type="submit">Применить</button>
-                            <button type="reset">Сбросить</button>>
+                            <button type="reset">Сбросить</button>
                         </div>
                     </form>
                 </div>
@@ -93,7 +95,7 @@
             <section class="catalog">
                 <div class="container">
                     <div class="catalog-menu">
-                        <h2>найдено гостиниц: 38</h2>
+                        <h2 class="catalog-title">найдено гостиниц: 38</h2>
                         <select name="price-filter" id="price-filter">
                             <option value="cheap">Сначала дешевые</option>
                             <option value="expensive">Сначала дорогие</option>

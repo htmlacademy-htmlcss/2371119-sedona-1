@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url(fonts/ptsans-400.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url(fonts/ptsans-700.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navigation-menu {
+    list-style-type: none;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.popup-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-image {
+    background-image: url(images/index-background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.hero p {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+}
+
+.about-list {
+    list-style-type: none;
+}
+
+.about-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.feature-text {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.features-list {
+    list-style-type: none;
+}
+
+.features h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feature-description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333;
+}
+
+.search-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.search-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333;
+}
+
+.search-button {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscribe-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscribe-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.subscribe-button {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
