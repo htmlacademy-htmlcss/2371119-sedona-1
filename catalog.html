@@ -12,7 +12,7 @@
             <div class="container">
                 <nav>
                     <a href="index.html">
-                        <img class="logo" src="images/Frame 19.png" alt="" width="140" height="70">
+                        <img class="logo" src="images/logo.png" alt="" width="140" height="70" alt="">
                     </a>
                     <ul class="navigation-menu">
                         <li class="navigation-item">
@@ -41,14 +41,14 @@
             <section class="catalog-search">
                 <div class="container">
                     <h1>Гостиницы Седоны</h1>
-                    <div class="signs">
-                        <img src="images/home.svg" width="12" height="12">
-                        <img src="images/arrow.svg">
+                    <div class="breadcrumbs">
+                        <img src="images/home.svg" width="12" height="12" alt="">
+                        <img src="images/arrow.svg" alt="">
                         <span>Гостиницы</span>
                     </div>
                     <form class="search-form" action="">
                         <ul class="infrastructure">
-                            <span class="infrastructure-title">Инфраструктура:</span>
+                            <p class="infrastructure-title">Инфраструктура:</p>
                             <li class="infrastructure-item">
                                 <input type="checkbox" name="pool" id="pool" checked>
                                 <label for="pool">Бассейн</label>
@@ -63,7 +63,7 @@
                             </li>
                         </ul>
                         <ul class="housing">
-                            <span class="housing-title">Тип Жилья:</span>
+                            <p class="housing-title">Тип Жилья:</p>
                             <li class="housing-item">
                                 <input type="checkbox" name="hotel" id="hotel" checked>
                                 <label for="hotel">Гостиница</label>
@@ -83,9 +83,9 @@
                             <input type="text" placeholder="9000">
                             <input type="range" min="0" max="9000" step="1" value="9000">
                         </div>
-                        <div class="buttons">
-                            <a href="#">Применить</a>
-                            <a href="#">Сбросить</a>
+                        <div class="filter-buttons">
+                            <button type="submit">Применить</button>
+                            <button type="reset">Сбросить</button>>
                         </div>
                     </form>
                 </div>
@@ -93,78 +93,79 @@
             <section class="catalog">
                 <div class="container">
                     <div class="catalog-menu">
-                        <h2>НАЙДЕНО ГОСТИНИЦ: 38</h2>
+                        <h2>найдено гостиниц: 38</h2>
                         <select name="price-filter" id="price-filter">
                             <option value="cheap">Сначала дешевые</option>
+                            <option value="expensive">Сначала дорогие</option>
                         </select>
                         <div class="view-selection">
                             <button type="button">
-                                <img src="images/view-1.svg" width="16" height="14">
+                                <img src="images/view-1.svg" width="16" height="14" alt="">
                             </button>
                             <button type="button">
-                                <img src="images/view-2.svg" width="16" height="14">
+                                <img src="images/view-2.svg" width="16" height="14" alt="">
                             </button>
                             <button type="button">
-                                <img src="images/view-3.svg" width="16" height="14">
+                                <img src="images/view-3.svg" width="16" height="14" alt="">
                             </button>
                         </div>
                     </div>
-                    <ul class="catalog-list">
-                        <li class="catalog-item">
-                            <img src="images/hotel-1.jpg">
-                            <h5 class="hotel-name">Amara Resort & Spa</h5>
-                            <span class="type">Гостиница</span>
-                            <span class="min-price">От 4000 ₽</span>
-                            <a href="#">ПОДРОБНЕЕ</a>
-                            <a href="#">В ИЗБРАННОЕ</a>
+                    <ul class="cards-list">
+                        <li class="card">
+                            <img class="card-image" src="images/amara-resort-&-spa.jpg" alt="">
+                            <h5 class="card-name">Amara Resort & Spa</h5>
+                            <span class="card-type">Гостиница</span>
+                            <span class="card-min-price">От 4000 ₽</span>
+                            <a class="card-more" href="#">подробнее</a>
+                            <a class="card-favorite" href="#">В избранное</a>
                             <div class="rating">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <span>РЕЙТИНГ: 8,5</span>
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <span>рейтинг: 8,5</span>
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <img src="images/hotel-2.jpg">
-                            <h5 class="hotel-name">Villas at Poco Diablo</h5>
-                            <span class="type">Гостиница</span>
-                            <span class="min-price">От 5000 ₽</span>
-                            <a href="#">ПОДРОБНЕЕ</a>
-                            <a href="#">В ИЗБРАННОМ</a>
+                            <img class="card-image" src="images/villas-at-poco-diablo.jpg" alt="">
+                            <h5 class="card-name">Villas at Poco Diablo</h5>
+                            <span class="card-type">Гостиница</span>
+                            <span class="card-min-price">От 5000 ₽</span>
+                            <a class="card-more" href="#">подробнее</a>
+                            <a class="card-favorite active" href="#">В избранном</a>
                             <div class="rating">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <span>РЕЙТИНГ: 9,2</span>
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <span>рейтинг: 9,2</span>
                             </div>
                         </li>
-                        <li class="catalog-item">
-                            <img src="images/hotel-3.jpg">
-                            <h5 class="hotel-name">Desert Quail Inn</h5>
-                            <span class="type">Гостиница</span>
-                            <span class="min-price">От 2500 ₽</span>
-                            <a href="#">ПОДРОБНЕЕ</a>
-                            <a href="#">В ИЗБРАННОЕ</a>
+                        <li class="card">
+                            <img class="card-image" src="images/desert-quail-inn.jpg" alt="">
+                            <h5 class="card-name">Desert Quail Inn</h5>
+                            <span class="card-type">Гостиница</span>
+                            <span class="card-min-price">От 2500 ₽</span>
+                            <a class="card-more" href="#">подробнее</a>
+                            <a class="card-favorite" href="#">В избранное</a>
                             <div class="rating">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <span>РЕЙТИНГ: 6,9</span>
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <span>рейтинг: 6,9</span>
                             </div>
                         </li>
-                        <li class="catalog-item">
-                            <img src="images/hotel-4.jpg">
-                            <h5 class="hotel-name">GreenTree Inn</h5>
-                            <span class="type">Гостиница</span>
-                            <span class="min-price">От 1500 ₽</span>
-                            <a href="#">ПОДРОБНЕЕ</a>
-                            <a href="#">В ИЗБРАННОЕ</a>
-                            <div class="rating">
-                                <img src="images/star.svg" width="18" height="17">
-                                <img src="images/star.svg" width="18" height="17">
-                                <span>РЕЙТИНГ: 5,0</span>
+                        <li class="card">
+                            <img class="card-image" src="images/greentree-inn.jpg" alt="">
+                            <h5 class="card-name">GreenTree Inn</h5>
+                            <span class="card-type">Гостиница</span>
+                            <span class="card-min-price">От 1500 ₽</span>
+                            <a class="card-more" href="#">подробнее</a>
+                            <a class="card-favorite" href="#">В избранное</a>
+                            <div class="card-rating">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <img src="images/star.svg" width="18" height="17" alt="">
+                                <span>рейтинг: 5,0</span>
                             </div>
                         </li>
                     </ul>
@@ -172,11 +173,11 @@
             </section>
             <section class="subscribe">
                 <div class="container">
-                    <h3>Подпишитесь на рассылку</h3>
-                    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                    <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
                     <form class="subscribe-form" action="">
                         <input type="email" name="subscribe-bar" id="subscribe-bar" placeholder="Ваш e-mail" required>
-                        <a class="subscribe-button" href="#">ПОДПИСАТЬСЯ</a>
+                        <button class="subscribe-button" type="submit">подписаться</button>
                     </form>
                 </div>
             </section>
@@ -195,7 +196,7 @@
                             <img src="images/youtube.svg" alt="Youtube" width="24" height="14">
                         </a>
                     </div>
-                    <a href="tel:+78128121212">+7(812)812-12-12</a>
+                    <a class="phone" href="tel:+78128121212">+7(812)812-12-12</a>
                     <a href="#">
                         <img src="images/academy-logo.svg" alt="" width="115" height="33">
                     </a>
