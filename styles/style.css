@@ -1,27 +1,53 @@
 @font-face {
-    font-family: 'PT Sans', sans-serif;
-    src: url(fonts/ptsans-400.woff2);
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-400.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'PT Sans', sans-serif;
-    src: url(fonts/ptsans-700.woff2);
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-700.woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
-
-* {
-    padding: 0;
+.clear-list {
     margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 140px;
+    padding: 8px 0 8px 0;
+    background-color: #756157;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button-blue {
+    background-color: #82B3D3;
+}
+
+
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .container {
@@ -29,7 +55,7 @@ body {
     margin: 0 auto;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +66,6 @@ nav {
 }
 
 .navigation-menu {
-    list-style-type: none;
     display: flex;
     align-items: center;
     margin-right: 285px;
@@ -63,9 +88,6 @@ nav {
 }
 
 .loupe-button, .heart-button {
-    border-radius: 50%;
-    border: none;
-    background-color: #fff;
     cursor: pointer;
 }
 
@@ -78,15 +100,7 @@ nav {
 }
 
 .popup-button {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 8px 34px;
-    background-color: #756157;
-    border: none;
-    border-radius: 4px;
+    width: 160px;
 }
 
 .hero-background-image {
@@ -104,7 +118,7 @@ nav {
     padding-top: 51px;
 }
 
-h1 {
+.hero-title {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -113,16 +127,12 @@ h1 {
     margin-bottom: 25px;
 }
 
-.hero p {
+.hero-text {
     font-size: 22px;
     line-height: 26px;
     color: #333;
     text-align: center;
     margin-bottom: 69px;
-}
-
-.about-list {
-    list-style-type: none;
 }
 
 .about-title {
@@ -150,11 +160,7 @@ h1 {
     text-align: center;
 }
 
-.features-list {
-    list-style-type: none;
-}
-
-.features h3 {
+.feature-name {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -182,10 +188,7 @@ h1 {
 }
 
 .search-button {
-    font-size: 20px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+    width: 376px;
 }
 
 .subscribe-title {
@@ -202,16 +205,67 @@ h1 {
 }
 
 .subscribe-button {
-    font-size: 20px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
+    width: 232px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
-.phone {
+.footer-phone {
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000;
     text-decoration: none;
+}
+
+.catalog-search-title {
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-name {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.search-form-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.checkbox-label {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.checklist-price-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.catalog-menu-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.price-filter-select {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-name {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.card-type, .card-min-price {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333;
+}
+
+.rating {
+    background-color: #f2f2f2;
+    color: #333;
 }

@@ -8,15 +8,15 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a>
+    <div class="container">
+      <header class="page-header">
+        <nav class="navbar">
+          <a class="logo-link">
             <img class="logo" src="images/logo.png" alt="" width="140" height="70">
           </a>
-          <ul class="navigation-menu">
+          <ul class="navigation-menu clear-list">
             <li class="navigation-item">
-              <a class="navigation-link active">Главная</a>
+              <a class="navigation-link navigation-link-active">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О седоне</a>
@@ -27,33 +27,29 @@
           </ul>
           <div class="navigation-menu-buttons">
             <button class="loupe-button" type="button">
-              <img src="images/search.svg" alt="Поиск" width="20" height="20">
+              <span class="visually-hidden">Поиск</span>
             </button>
             <button class="heart-button" type="button">
-              <img src="images/heart.svg" alt="Избранное" width="20" height="20">
+              <span class="visually-hidden">Избранное</span>
             </button>
-            <button class="popup-button" type="button">хочу сюда!</button>
+            <button class="popup-button button" type="button">Хочу сюда!</button>
           </div>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-background-image">
-          <img class="welcome-image" src="images/welcome.svg" alt="">
-        </div>
-        <div class="container">
-          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container">
-          <ul class="about-list">
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero-background-image">
+            <img class="welcome-image" src="images/welcome.svg" alt="Welcome" width="458" height="352">
+          </div>
+          <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </section>
+        <section class="about">
+          <ul class="about-list clear-list">
             <li class="about-item">
               <h3 class="about-title">Настоящий городок</h3>
               <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="images/photo-1.jpg" alt="" width="800" height="385">
+              <img src="images/About-Cafe-Photo.jpg" alt="Open Sange" width="800" height="385">
             </li>
             <li class="about-item">
               <h3 class="about-title">Небольшая площадь</h3>
@@ -70,77 +66,73 @@
             <li class="about-item">
               <h3 class="about-title">Там есть мост дьявола</h3>
               <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img src="images/photo-2.jpg" alt="" width="800" height="385">
+              <img src="images/devils-bridge.jpg" alt="Мост дъявола" width="800" height="385">
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="features">
-        <div class="container">
+        </section>
+        <section class="features">
           <h2 class="features-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="feature-text">Опытный персонал и качественное обслуживание!</p>
-          <ul class="features-list">
+          <ul class="features-list clear-list">
             <li class="feature-item">
-              <img class="feature-logo" src="images/Advantage-icon.svg" width="75" height="72" alt="">
-              <h3>жильё</h3>
-              <p class="feature-description">Рекомендуем пожить в настоящем мотеле,
+              <h3 class="feature-name">Жильё</h3>
+              <p class="feature-description">Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!</p>
             </li>
             <li class="feature-item">
-              <img class="feature-logo" src="images/Advantage-icon-2.svg" width="75" height="72" alt="">
-              <h3>еда</h3>
+              <h3 class="feature-name">Еда</h3>
               <p class="feature-description">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="feature-item">
-              <img class="feature-logo" src="images/Advantage-icon-3.svg" width="75" height="72" alt="">
-              <h3>сувениры</h3>
+              <h3 class="feature-name">Сувениры</h3>
               <p class="feature-description">Не только китайского,
                 но и настоящего местного производства!</p>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="search">
-        <div class="container">
+        </section>
+        <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
             Седоне</p>
-          <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
-        </div>
-      </section>
-      <section class="subscribe">
-        <div class="container">
+          <button type="button" class="search-button button button-big">Поиск гостиницы в Седоне</button>
+        </section>
+        <section class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="">
-            <input type="email" name="subscribe-bar" id="subscribe-bar" placeholder="Ваш e-mail" required>
-            <button class="subscribe-button" type="submit">подписаться</button>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
+            <input class="subscribe-email-input" type="email" name="subscribe-bar" id="subscribe-bar"
+              placeholder="Ваш e-mail" required>
+            <button class="subscribe-button button button-big button-blue" type="submit">Подписаться</button>
           </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container">
+        </section>
+      </main>
+      <footer class="page-footer">
         <div class="footer-wrapper">
-          <div class="social">
-            <a href="#">
-              <img src="images/vk.svg" alt="ВКонтакте" width="24" height="14">
-            </a>
-            <a href="#">
-              <img src="images/telegram.svg" alt="Telegram" width="24" height="14">
-            </a>
-            <a href="#">
-              <img src="images/youtube.svg" alt="Youtube" width="24" height="14">
-            </a>
-          </div>
-          <a class="phone" href="tel:+78128121212">+7(812)812-12-12</a>
-          <a href="#">
-            <img src="images/academy-logo.svg" alt="" width="115" height="33">
+          <ul class="social clear-list">
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+          <a href="https://htmlacademy.ru/">
+            <span class="visually-hidden">htmlacademy</span>
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 
 </html>
