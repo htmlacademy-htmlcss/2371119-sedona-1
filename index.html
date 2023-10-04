@@ -27,16 +27,16 @@
           </ul>
           <div class="navigation-menu-buttons">
             <button class="loupe-button" type="button">
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden loupe-icon navigation-icon">Поиск</span>
             </button>
             <button class="heart-button" type="button">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden heart-icon navigation-icon">Избранное</span>
             </button>
             <button class="popup-button button" type="button">Хочу сюда!</button>
           </div>
         </nav>
       </header>
-      <main>
+      <main class="page-main">
         <section class="hero">
           <div class="hero-background-image">
             <img class="welcome-image" src="images/welcome.svg" alt="Welcome" width="458" height="352">
@@ -47,25 +47,35 @@
         <section class="about">
           <ul class="about-list clear-list">
             <li class="about-item">
-              <h3 class="about-title">Настоящий городок</h3>
-              <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="about-text about-text-blue">
+                <h3 class="about-title">Настоящий городок</h3>
+                <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/About-Cafe-Photo.jpg" alt="Open Sange" width="800" height="385">
             </li>
             <li class="about-item">
-              <h3 class="about-title">Небольшая площадь</h3>
-              <p class="about-description">Все достопримечательности находятся очень близко</p>
+              <div class="about-text">
+                <h3 class="about-title">Небольшая площадь</h3>
+                <p class="about-description">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Красивая дорога</h3>
-              <p class="about-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="about-text about-text-middle">
+                <h3 class="about-title">Красивая дорога</h3>
+                <p class="about-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Мало туристов</h3>
-              <p class="about-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="about-text">
+                <h3 class="about-title">Мало туристов</h3>
+                <p class="about-description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Там есть мост дьявола</h3>
-              <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="about-text about-text-blue">
+                <h3 class="about-title">Там есть мост дьявола</h3>
+                <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img src="images/devils-bridge.jpg" alt="Мост дъявола" width="800" height="385">
             </li>
           </ul>
@@ -75,16 +85,19 @@
           <p class="feature-text">Опытный персонал и качественное обслуживание!</p>
           <ul class="features-list clear-list">
             <li class="feature-item">
+              <span class="house-icon feature-icon"></span>
               <h3 class="feature-name">Жильё</h3>
               <p class="feature-description">Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-middle">
+              <span class="burger-icon feature-icon"></span>
               <h3 class="feature-name">Еда</h3>
               <p class="feature-description">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="feature-item">
+              <span class="gift-icon feature-icon"></span>
               <h3 class="feature-name">Сувениры</h3>
               <p class="feature-description">Не только китайского,
                 но и настоящего местного производства!</p>
@@ -111,24 +124,24 @@
         <div class="footer-wrapper">
           <ul class="social clear-list">
             <li class="social-item">
-              <a href="#">
-                <span class="visually-hidden">ВКонтакте</span>
+              <a class="social-link" href="#">
+                <span class="visually-hidden social-icon vk-icon">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
-                <span class="visually-hidden">Telegram</span>
+              <a class="social-link" href="#">
+                <span class="visually-hidden social-icon tg-icon">Telegram</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
-                <span class="visually-hidden">Youtube</span>
+              <a class="social-link" href="#">
+                <span class="visually-hidden social-icon youtube-icon">Youtube</span>
               </a>
             </li>
           </ul>
           <a class="footer-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-          <a href="https://htmlacademy.ru/">
-            <span class="visually-hidden">htmlacademy</span>
+          <a class="social-link" href="https://htmlacademy.ru/">
+            <span class="visually-hidden htmlacademy-icon">htmlacademy</span>
           </a>
         </div>
       </footer>
