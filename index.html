@@ -26,65 +26,82 @@
             </li>
           </ul>
           <div class="navigation-menu-buttons">
-            <button class="loupe-button" type="button">
+            <button class="loupe-button loupe-icon navigation-icon" type="button">
               <span class="visually-hidden">Поиск</span>
             </button>
-            <button class="heart-button" type="button">
+            <button class="heart-button heart-icon navigation-icon" type="button">
               <span class="visually-hidden">Избранное</span>
             </button>
             <button class="popup-button button" type="button">Хочу сюда!</button>
           </div>
         </nav>
       </header>
-      <main>
+      <main class="page-main">
         <section class="hero">
           <div class="hero-background-image">
             <img class="welcome-image" src="images/welcome.svg" alt="Welcome" width="458" height="352">
           </div>
-          <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="hero-text">
+            <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p class="hero-p">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
         </section>
         <section class="about">
           <ul class="about-list clear-list">
             <li class="about-item">
-              <h3 class="about-title">Настоящий городок</h3>
-              <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="about-text about-text-blue">
+                <h3 class="about-title">Настоящий городок</h3>
+                <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/About-Cafe-Photo.jpg" alt="Open Sange" width="800" height="385">
             </li>
             <li class="about-item">
-              <h3 class="about-title">Небольшая площадь</h3>
-              <p class="about-description">Все достопримечательности находятся очень близко</p>
+              <div class="about-text">
+                <h3 class="about-title">Небольшая площадь</h3>
+                <p class="about-description">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Красивая дорога</h3>
-              <p class="about-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="about-text about-text-middle">
+                <h3 class="about-title">Красивая дорога</h3>
+                <p class="about-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Мало туристов</h3>
-              <p class="about-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="about-text">
+                <h3 class="about-title">Мало туристов</h3>
+                <p class="about-description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
             <li class="about-item">
-              <h3 class="about-title">Там есть мост дьявола</h3>
-              <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="about-text about-text-blue about-text-reverse">
+                <h3 class="about-title">Там есть мост дьявола</h3>
+                <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img src="images/devils-bridge.jpg" alt="Мост дъявола" width="800" height="385">
             </li>
           </ul>
         </section>
         <section class="features">
-          <h2 class="features-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="feature-text">Опытный персонал и качественное обслуживание!</p>
+          <div class="feature-text">
+            <h2 class="features-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="feature-p">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="features-list clear-list">
             <li class="feature-item">
+              <span class="house-icon feature-icon"></span>
               <h3 class="feature-name">Жильё</h3>
               <p class="feature-description">Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-middle">
+              <span class="burger-icon feature-icon"></span>
               <h3 class="feature-name">Еда</h3>
               <p class="feature-description">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="feature-item">
+              <span class="gift-icon feature-icon"></span>
               <h3 class="feature-name">Сувениры</h3>
               <p class="feature-description">Не только китайского,
                 но и настоящего местного производства!</p>
@@ -111,23 +128,23 @@
         <div class="footer-wrapper">
           <ul class="social clear-list">
             <li class="social-item">
-              <a href="#">
+              <a class="social-link social-icon vk-icon" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
+              <a class="social-link social-icon tg-icon" href="#">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
+              <a class="social-link social-icon youtube-icon" href="#">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
           </ul>
           <a class="footer-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-          <a href="https://htmlacademy.ru/">
+          <a class="social-link htmlacademy-icon" href="https://htmlacademy.ru/">
             <span class="visually-hidden">htmlacademy</span>
           </a>
         </div>
