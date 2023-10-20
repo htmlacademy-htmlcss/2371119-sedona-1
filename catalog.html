@@ -13,31 +13,38 @@
       <header class="page-header">
         <nav class="navbar">
           <a class="logo-link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="" width="140" height="70">
+            <img class="logo" src="images/logo.svg" alt="" width="140" height="70">
           </a>
           <ul class="navigation-menu clear-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-active">Гостиницы</a>
             </li>
           </ul>
-          <div class="navigation-menu-buttons">
-            <button class="loupe-button loupe-icon navigation-icon" type="button">
-              <span class="visually-hidden">Поиск</span>
-            </button>
-            <button class="heart-button heart-icon navigation-icon" type="button">
-              <span class="visually-hidden">Избранное</span>
-            </button>
-            <button class="popup-button button" type="button">Хочу сюда!</button>
-          </div>
+          <ul class="navigation-menu-buttons clear-list">
+            <li class="navigation-menu-button">
+              <button class="loupe-button loupe-icon navigation-icon" type="button">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li class="navigation-menu-button">
+              <button class="heart-button heart-icon navigation-icon" type="button">
+                <span class="visually-hidden">Избранное</span>
+                <span class="favorites">12</span>
+              </button>
+            </li>
+            <li class="navigation-menu-button">
+              <button class="modal-button button" type="button">Хочу сюда!</button>
+            </li>
+          </ul>
         </nav>
       </header>
-      <main class="page-main">
+      <main class="page-main catalog-main">
         <section class="catalog-search">
           <div class="catalog-search-wrapper">
             <h1 class="catalog-search-title">Гостиницы Седоны</h1>
@@ -58,24 +65,21 @@
                 <p class="search-form-title">Инфраструктура:</p>
                 <ul class="search-checklist clear-list">
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
+                    <label class="checkbox">
                       <input class="search-checkbox square-checkbox" type="checkbox" name="pool" checked>
-                      <span class="checkbox-el"></span>
-                      Бассейн
+                      <span class="checkbox-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
+                    <label class="checkbox">
                       <input class="search-checkbox square-checkbox" type="checkbox" name="parking" checked>
-                      <span class="checkbox-el"></span>
-                      Парковка
+                      <span class="checkbox-label">Парковка</span>
                     </label>
                   </li>
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
+                    <label class="checkbox">
                       <input class="search-checkbox square-checkbox" type="checkbox" name="Wi-Fi">
-                      <span class="checkbox-el"></span>
-                      Wi-Fi
+                      <span class="checkbox-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -84,37 +88,44 @@
                 <p class="search-form-title">Тип Жилья:</p>
                 <ul class="search-checklist clear-list">
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
-                      <input class="search-checkbox round-checkbox" type="checkbox" name="hotel" checked>
-                      <span class="checkbox-el"></span>
-                      Гостиница
+                    <label class="checkbox">
+                      <input class="search-checkbox round-radio" type="radio" name="typehouse" value="hotel" checked>
+                      <span class="checkbox-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
-                      <input class="search-checkbox round-checkbox" type="checkbox" name="hostel">
-                      <span class="checkbox-el"></span>
-                      Мотель
+                    <label class="checkbox">
+                      <input class="search-checkbox round-radio" type="radio" name="typehouse" value="hostel">
+                      <span class="checkbox-label">Мотель</span>
                     </label>
                   </li>
                   <li class="search-checklist-item">
-                    <label class="checkbox-label">
-                      <input class="search-checkbox round-checkbox" type="checkbox" name="apartament">
-                      <span class="checkbox-el"></span>
-                      Апартаменты
+                    <label class="checkbox">
+                      <input class="search-checkbox round-radio" type="radio" name="typehouse" value="apartament">
+                      <span class="checkbox-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </div>
               <div class="checklist-price">
                 <p class="search-form-title">Стоимость, ₽:</p>
-                <div class="price-text-wrapper">
-                  <input class="price-input price-input-min" type="text" placeholder="от">
-                  <input class="price-input price-input-max" type="text" placeholder="до">
-                </div>
-                <div class="price-range-wrapper">
-                  <input class="price-range price-range-min" type="range" min="0" max="9000" step="1" value="0">
-                  <input class="price-range price-range-max" type="range" min="0" max="9000" step="1" value="9000">
+                <div class="checklist-price-inputs-wrapper">
+                  <div class="price-text-wrapper">
+                    <input class="price-input price-input-min" type="number" name="price-min" value="0">
+                    <span class="price-input-clue price-input-clue-min">от</span>
+                    <input class="price-input price-input-max" type="number" name="price-max" value="9000">
+                    <span class="price-input-clue price-input-clue-max">до</span>
+                  </div>
+                  <div class="price-range-slider-wrapper">
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="price-range-wrapper">
+                      <input class="price-range price-range-min" type="range" min="0" max="12000" step="500" value="0">
+                      <input class="price-range price-range-max" type="range" min="0" max="12000" step="500"
+                        value="9000">
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="checklist-filter-buttons">
@@ -160,7 +171,7 @@
                   <div class="stars stars-4">
                     <span class="visually-hidden">4 звезды</span>
                   </div>
-                  <span class="rating button">рейтинг: 8,5</span>
+                  <span class="rating">рейтинг: 8,5</span>
                 </div>
               </li>
               <li class="card catalog-item">
@@ -178,7 +189,7 @@
                   <div class="stars stars-4">
                     <span class="visually-hidden">4 звезды</span>
                   </div>
-                  <span class="rating button">рейтинг: 9,2</span>
+                  <span class="rating">рейтинг: 9,2</span>
                 </div>
               </li>
               <li class="card">
@@ -196,7 +207,7 @@
                   <div class="stars stars-3">
                     <span class="visually-hidden">3 звезды</span>
                   </div>
-                  <span class="rating button">рейтинг: 6,9</span>
+                  <span class="rating">рейтинг: 6,9</span>
                 </div>
               </li>
               <li class="card">
@@ -214,7 +225,7 @@
                   <div class="stars stars-2">
                     <span class="visually-hidden">2 звезды</span>
                   </div>
-                  <span class="rating button">рейтинг: 5,0</span>
+                  <span class="rating">рейтинг: 5,0</span>
                 </div>
               </li>
             </ul>
@@ -254,7 +265,7 @@
         </section>
         <section class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
             <input class="subscribe-email-input" type="email" name="subscribe-bar" id="subscribe-bar"
               placeholder="Ваш e-mail" required>
@@ -281,13 +292,59 @@
               </a>
             </li>
           </ul>
-          <a class="footer-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="social-link htmlacademy-icon" href="https://htmlacademy.ru/">
             <span class="visually-hidden">htmlacademy</span>
           </a>
         </div>
       </footer>
     </div>
+    <div class="modal-container modal-closed">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden modal-close-button">Закрыть</span>
+        </button>
+        <form class="modal-form">
+          <div class="modal-input-wrapper">
+            <label class="modal-label" for="check-in">Дата Заезда:</label>
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-in" id="check-in" value="27 апреля 2020" required>
+          </div>
+          <p class="modal-date-input-alert error-alert">Мы не можем отправить вас в прошлое.</p>
+          <div class="modal-input-wrapper">
+            <label class="modal-label" for="check-out">Дата Выезда:</label>
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-out" id="check-out" value="1 сентября 2023"
+              required>
+          </div>
+          <p class="modal-date-input-alert">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="guest-counter">
+            <div class="modal-input-wrapper adults-wrapper">
+              <label class="modal-label adults-label" for="adults">Взрослые:</label>
+              <button class="guest-input-button minus-button" type="button"></button>
+              <input class="guests-input adults-input" name="adults" id="adults" type="number" min="1" max="10"
+                value="1" step="1">
+              <button class="guest-input-button plus-button" type="button"></button>
+            </div>
+            <div class="modal-input-wrapper kids-wrapper">
+              <label class="modal-label kids-label" for="kids">Дети:</label>
+              <a class="information-button">
+                <span class="visually-hidden">Информация</span>
+              </a>
+              <div class="kids-info visually-hidden">
+                <p class="kids-info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6
+                  до 18 лет.<br> Дети до 6 лет размещаются<br> бесплатно.</p>
+              </div>
+              <button class="guest-input-button minus-button" type="button"></button>
+              <input class="guests-input kids-input" type="number" name="kids" id="kids" min="0" max="10" value="0"
+                step="1">
+              <button class="guest-input-button plus-button" type="button"></button>
+            </div>
+          </div>
+          <button class="modal-submit-button button button-blue">Найти</button>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/index.js"></script>
   </body>
 
 </html>
