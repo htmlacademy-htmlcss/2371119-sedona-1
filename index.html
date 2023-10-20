@@ -12,7 +12,7 @@
       <header class="page-header">
         <nav class="navbar">
           <a class="logo-link">
-            <img class="logo" src="images/logo.png" alt="" width="140" height="70">
+            <img class="logo" src="images/logo.svg" alt="" width="140" height="70">
           </a>
           <ul class="navigation-menu clear-list">
             <li class="navigation-item">
@@ -60,7 +60,7 @@
                 <h3 class="about-title">Настоящий городок</h3>
                 <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/About-Cafe-Photo.jpg" alt="Open Sange" width="800" height="385">
+              <img src="images/about-cafephoto.jpg" alt="Open Sange" width="800" height="385">
             </li>
             <li class="about-item">
               <div class="about-text">
@@ -164,15 +164,12 @@
         <form class="modal-form">
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-in">Дата Заезда:</label>
-            <input class="modal-date-input" type="text" name="check-in" id="check-in" value="27 апреля 2020" required>
-            <span class="calendar-icon"></span>
+            <input class="modal-date-input" type="text" name="check-in" id="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
           </div>
           <p class="modal-date-input-alert error-alert">Мы не можем отправить вас в прошлое.</p>
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-out">Дата Выезда:</label>
-            <input class="modal-date-input" type="text" name="check-out" id="check-out" value="1 сентября 2023"
-              required>
-            <span class="calendar-icon"></span>
+            <input class="modal-date-input" type="text" name="check-out" id="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
           </div>
           <p class="modal-date-input-alert">На эти даты есть свободные номера. Пока есть.</p>
           <div class="guest-counter">
@@ -202,7 +199,7 @@
         </form>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 
 </html>

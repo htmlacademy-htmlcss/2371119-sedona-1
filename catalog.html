@@ -13,7 +13,7 @@
       <header class="page-header">
         <nav class="navbar">
           <a class="logo-link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="" width="140" height="70">
+            <img class="logo" src="images/logo.svg" alt="" width="140" height="70">
           </a>
           <ul class="navigation-menu clear-list">
             <li class="navigation-item">
@@ -308,15 +308,13 @@
         <form class="modal-form">
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-in">Дата Заезда:</label>
-            <input class="modal-date-input" type="text" name="check-in" id="check-in" value="27 апреля 2020" required>
-            <span class="calendar-icon"></span>
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-in" id="check-in" value="27 апреля 2020" required>
           </div>
           <p class="modal-date-input-alert error-alert">Мы не можем отправить вас в прошлое.</p>
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-out">Дата Выезда:</label>
-            <input class="modal-date-input" type="text" name="check-out" id="check-out" value="1 сентября 2023"
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-out" id="check-out" value="1 сентября 2023"
               required>
-            <span class="calendar-icon"></span>
           </div>
           <p class="modal-date-input-alert">На эти даты есть свободные номера. Пока есть.</p>
           <div class="guest-counter">
@@ -346,7 +344,7 @@
         </form>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 
 </html>
