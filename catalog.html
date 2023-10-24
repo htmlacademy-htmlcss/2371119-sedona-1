@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles/style.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" sizes="16x16 32x32">
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <header class="page-header">
         <nav class="navbar">
           <a class="logo-link" href="index.html">
-            <img class="logo" src="images/logo.svg" alt="" width="140" height="70">
+            <img class="logo" src="images/logo.svg" alt="Sedona Logo." width="140" height="70">
           </a>
           <ul class="navigation-menu clear-list">
             <li class="navigation-item">
@@ -111,10 +112,14 @@
                 <p class="search-form-title">Стоимость, ₽:</p>
                 <div class="checklist-price-inputs-wrapper">
                   <div class="price-text-wrapper">
-                    <input class="price-input price-input-min" type="number" name="price-min" value="0">
-                    <span class="price-input-clue price-input-clue-min">от</span>
-                    <input class="price-input price-input-max" type="number" name="price-max" value="9000">
-                    <span class="price-input-clue price-input-clue-max">до</span>
+                    <label class="price-input-label">
+                      <input class="price-input price-input-min" type="number" name="price-min" value="0">
+                      <span class="price-input-clue price-input-clue-min">от</span>
+                    </label>
+                    <label class="price-input-label">
+                      <input class="price-input price-input-max" type="number" name="price-max" value="9000">
+                      <span class="price-input-clue price-input-clue-max">до</span>
+                    </label>
                   </div>
                   <div class="price-range-slider-wrapper">
                     <div class="slider">
@@ -157,8 +162,9 @@
             </div>
             <ul class="cards-list clear-list">
               <li class="card">
-                <img class="card-image" src="images/amara-resort-and-spa.jpg" alt="">
-                <h5 class="card-name">Amara Resort & Spa</h5>
+                <img class="card-image" src="images/amara-resort-and-spa.jpg" alt="Amara resort and spa." width="300"
+                  height="212">
+                <h3 class="card-name">Amara Resort & Spa</h3>
                 <div class="card-type-price-wrapper">
                   <span class="card-type">Гостиница</span>
                   <span class="card-min-price">От 4000 ₽</span>
@@ -175,8 +181,9 @@
                 </div>
               </li>
               <li class="card catalog-item">
-                <img class="card-image" src="images/villas-at-poco-diablo.jpg" alt="">
-                <h5 class="card-name">Villas at Poco Diablo</h5>
+                <img class="card-image" src="images/villas-at-poco-diablo.jpg" alt="Villas at poco diablo." width="300"
+                  height="212">
+                <h3 class="card-name">Villas at Poco Diablo</h3>
                 <div class="card-type-price-wrapper">
                   <span class="card-type">Гостиница</span>
                   <span class="card-min-price">От 5000 ₽</span>
@@ -193,8 +200,9 @@
                 </div>
               </li>
               <li class="card">
-                <img class="card-image" src="images/desert-quail-inn.jpg" alt="">
-                <h5 class="card-name">Desert Quail Inn</h5>
+                <img class="card-image" src="images/desert-quail-inn.jpg" alt="Desert quail inn." width="300"
+                  height="212">
+                <h3 class="card-name">Desert Quail Inn</h3>
                 <div class="card-type-price-wrapper">
                   <span class="card-type">Гостиница</span>
                   <span class="card-min-price">От 2500 ₽</span>
@@ -211,8 +219,8 @@
                 </div>
               </li>
               <li class="card">
-                <img class="card-image" src="images/greentree-inn.jpg" alt="">
-                <h5 class="card-name">GreenTree Inn</h5>
+                <img class="card-image" src="images/greentree-inn.jpg" alt="GreenTree inn." width="300" height="212">
+                <h3 class="card-name">GreenTree Inn</h3>
                 <div class="card-type-price-wrapper">
                   <span class="card-type">Гостиница</span>
                   <span class="card-min-price">От 1500 ₽</span>
@@ -264,7 +272,7 @@
           </div>
         </section>
         <section class="subscribe">
-          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+          <h4 class="subscribe-title">Подпишитесь на рассылку</h4>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
             <input class="subscribe-email-input" type="email" name="subscribe-bar" id="subscribe-bar"
@@ -305,42 +313,43 @@
         <button class="modal-close-button" type="button">
           <span class="visually-hidden modal-close-button">Закрыть</span>
         </button>
-        <form class="modal-form">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/">
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-in">Дата Заезда:</label>
-            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-in" id="check-in" value="27 апреля 2020" required>
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-in" id="check-in"
+              value="27 апреля 2020" required>
           </div>
           <p class="modal-date-input-alert error-alert">Мы не можем отправить вас в прошлое.</p>
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-out">Дата Выезда:</label>
-            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-out" id="check-out" value="1 сентября 2023"
-              required>
+            <input class="modal-date-input" placeholder="Укажите дату" type="text" name="check-out" id="check-out"
+              value="1 сентября 2023" required>
           </div>
           <p class="modal-date-input-alert">На эти даты есть свободные номера. Пока есть.</p>
           <div class="guest-counter">
             <div class="modal-input-wrapper adults-wrapper">
               <label class="modal-label adults-label" for="adults">Взрослые:</label>
-              <button class="guest-input-button minus-button" type="button"></button>
+              <button class="guest-input-button minus-button" type="button">Уменьшить количество взрослых</button>
               <input class="guests-input adults-input" name="adults" id="adults" type="number" min="1" max="10"
                 value="1" step="1">
-              <button class="guest-input-button plus-button" type="button"></button>
+              <button class="guest-input-button plus-button" type="button">Увеличить количество взрослых</button>
             </div>
             <div class="modal-input-wrapper kids-wrapper">
               <label class="modal-label kids-label" for="kids">Дети:</label>
-              <a class="information-button">
+              <button type="button" class="information-button">
                 <span class="visually-hidden">Информация</span>
-              </a>
+              </button>
               <div class="kids-info visually-hidden">
                 <p class="kids-info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6
                   до 18 лет.<br> Дети до 6 лет размещаются<br> бесплатно.</p>
               </div>
-              <button class="guest-input-button minus-button" type="button"></button>
+              <button class="guest-input-button minus-button" type="button">Уменьшить количество детей</button>
               <input class="guests-input kids-input" type="number" name="kids" id="kids" min="0" max="10" value="0"
                 step="1">
-              <button class="guest-input-button plus-button" type="button"></button>
+              <button class="guest-input-button plus-button" type="button">Увеличить количество детей</button>
             </div>
           </div>
-          <button class="modal-submit-button button button-blue">Найти</button>
+          <button type="submit" class="modal-submit-button button button-blue">Найти</button>
         </form>
       </div>
     </div>

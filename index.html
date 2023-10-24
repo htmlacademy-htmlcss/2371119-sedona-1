@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="styles/style.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" sizes="16x16 32x32">
   </head>
 
   <body>
@@ -12,7 +13,7 @@
       <header class="page-header">
         <nav class="navbar">
           <a class="logo-link">
-            <img class="logo" src="images/logo.svg" alt="" width="140" height="70">
+            <img class="logo" src="images/logo.svg" alt="Sedona Logo." width="140" height="70">
           </a>
           <ul class="navigation-menu clear-list">
             <li class="navigation-item">
@@ -46,7 +47,7 @@
       <main class="page-main">
         <section class="hero">
           <div class="hero-background-image">
-            <img class="welcome-image" src="images/welcome.svg" alt="Welcome" width="458" height="352">
+            <img class="welcome-image" src="images/welcome.svg" alt="Welcome." width="458" height="352">
           </div>
           <div class="hero-text">
             <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -57,35 +58,35 @@
           <ul class="about-list clear-list">
             <li class="about-item">
               <div class="about-text about-text-blue">
-                <h3 class="about-title">Настоящий городок</h3>
+                <h2 class="about-title">Настоящий городок</h2>
                 <p class="about-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/about-cafephoto.jpg" alt="Open Sange" width="800" height="385">
+              <img src="images/about-cafephoto.jpg" alt="Open Sange." width="800" height="385">
             </li>
             <li class="about-item">
               <div class="about-text">
-                <h3 class="about-title">Небольшая площадь</h3>
+                <h2 class="about-title">Небольшая площадь</h2>
                 <p class="about-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="about-item">
               <div class="about-text about-text-middle">
-                <h3 class="about-title">Красивая дорога</h3>
+                <h2 class="about-title">Красивая дорога</h2>
                 <p class="about-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="about-item">
               <div class="about-text">
-                <h3 class="about-title">Мало туристов</h3>
+                <h2 class="about-title">Мало туристов</h2>
                 <p class="about-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="about-item">
               <div class="about-text about-text-blue about-text-reverse">
-                <h3 class="about-title">Там есть<br> мост дьявола</h3>
+                <h2 class="about-title">Там есть<br> мост дьявола</h2>
                 <p class="about-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img src="images/devils-bridge.jpg" alt="Мост дъявола" width="800" height="385">
+              <img src="images/devils-bridge.jpg" alt="Мост дъявола." width="800" height="385">
             </li>
           </ul>
         </section>
@@ -161,41 +162,43 @@
         <button class="modal-close-button" type="button">
           <span class="visually-hidden modal-close-button">Закрыть</span>
         </button>
-        <form class="modal-form">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/">
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-in">Дата Заезда:</label>
-            <input class="modal-date-input" type="text" name="check-in" id="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
+            <input class="modal-date-input" type="text" name="check-in" id="check-in" value="27 апреля 2020"
+              placeholder="Укажите дату" required>
           </div>
           <p class="modal-date-input-alert error-alert">Мы не можем отправить вас в прошлое.</p>
           <div class="modal-input-wrapper">
             <label class="modal-label" for="check-out">Дата Выезда:</label>
-            <input class="modal-date-input" type="text" name="check-out" id="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
+            <input class="modal-date-input" type="text" name="check-out" id="check-out" value="1 сентября 2023"
+              placeholder="Укажите дату" required>
           </div>
           <p class="modal-date-input-alert">На эти даты есть свободные номера. Пока есть.</p>
           <div class="guest-counter">
             <div class="modal-input-wrapper adults-wrapper">
               <label class="modal-label adults-label" for="adults">Взрослые:</label>
-              <button class="guest-input-button minus-button" type="button"></button>
+              <button class="guest-input-button minus-button" type="button">Уменьшить количество взрослых</button>
               <input class="guests-input adults-input" name="adults" id="adults" type="number" min="1" max="10"
                 value="1" step="1">
-              <button class="guest-input-button plus-button" type="button"></button>
+              <button class="guest-input-button plus-button" type="button">Увеличить количество взрослых</button>
             </div>
             <div class="modal-input-wrapper kids-wrapper">
               <label class="modal-label kids-label" for="kids">Дети:</label>
-              <a class="information-button">
+              <button type="button" class="information-button">
                 <span class="visually-hidden">Информация</span>
-              </a>
+              </button>
               <div class="kids-info visually-hidden">
                 <p class="kids-info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6
                   до 18 лет.<br> Дети до 6 лет размещаются<br> бесплатно.</p>
               </div>
-              <button class="guest-input-button minus-button" type="button"></button>
+              <button class="guest-input-button minus-button" type="button">Уменьшить количество детей</button>
               <input class="guests-input kids-input" type="number" name="kids" id="kids" min="0" max="10" value="0"
                 step="1">
-              <button class="guest-input-button plus-button" type="button"></button>
+              <button class="guest-input-button plus-button" type="button">Увеличить количество детей</button>
             </div>
           </div>
-          <button class="modal-submit-button button button-blue">Найти</button>
+          <button type="submit" class="modal-submit-button button button-blue">Найти</button>
         </form>
       </div>
     </div>
